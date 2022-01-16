@@ -221,175 +221,11 @@ a {
 }
 
 /* PAGINA PROYECTOS */
-/* Grilla Proyectos */
-.grillaProyectos {
-    display: grid;
-    grid-template-columns: 0.3fr 1fr 1fr 1fr 0.3fr;
-    grid-template-rows: 90px 0.25fr 0.35fr 1fr 1fr 1fr 1fr 0.15fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "header header header header header"
-        ". titularPro titularPro titularPro ."
-        ". menuPro menuPro menuPro ."
-        ". proyecto1 proyecto2 proyecto3 ."
-        ". proyecto4 proyecto5 proyecto6 ."
-        ". proyecto7 proyecto8 proyecto9 ."
-        ". proyecto10 proyecto11 proyecto12 ."
-        "footer footer footer footer footer";
-}
-
-.header {
-    grid-area: header;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 20px;
-}
 
 
-.titularPro {
-    grid-area: titularPro;
-}
 
-.menuPro {
-    grid-area: menuPro;
-}
 
-.proyecto1 {
-    grid-area: proyecto1;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgb(110, 230, 74);
-}
 
-.proyecto2 {
-    grid-area: proyecto2;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgb(225, 128, 245);
-}
-
-.proyecto3 {
-    grid-area: proyecto3;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: aqua;
-}
-
-.proyecto4 {
-    grid-area: proyecto4;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgb(110, 230, 74);
-}
-
-.proyecto5 {
-    grid-area: proyecto5;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgb(225, 128, 245);
-}
-
-.proyecto6 {
-    grid-area: proyecto6;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: aqua;
-}
-
-.proyecto7 {
-    grid-area: proyecto7;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgb(110, 230, 74);
-}
-
-.proyecto8 {
-    grid-area: proyecto8;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgb(225, 128, 245);
-}
-
-.proyecto9 {
-    grid-area: proyecto9;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: aqua;
-}
-
-.proyecto10 {
-    grid-area: proyecto10;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgb(110, 230, 74);
-}
-
-.proyecto11 {
-    grid-area: proyecto11;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgb(225, 128, 245);
-}
-
-.proyecto12 {
-    grid-area: proyecto12;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: aqua;
-}
-
-.footer {
-    grid-area: footer;
-}
-
-.proyectosTitulo {
-    font-size: 56px;
-    padding-left: 20px;
-    margin-bottom: 20px;
-}
-
-/* Menu de proyectos */
-.proyectosMenu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 30px;
-    margin-top: 40px;
-}
-
-.proyectoBoton {
-    font-size: 17px;
-    font-weight: 100;
-    border: solid 1px #484747;
-    padding: 9px;
-    border-radius: 30px;
-}
-
-.proyectoBoton:hover {
-    background-color: #484747;
-}
-
-.proyectoLink {
-    color: #484747;
-}
-
-.proyectoLink:hover {
-    color: azure;
-}
 
 /* PAGINA NOSOTRXS */
 /* Grilla Nosotrxs */
@@ -567,7 +403,7 @@ a {
 /* MEDIA QUERYS */
 
 /* Tamaño mediano */
-@media (max-width: 768px){
+@media (max-width:992px) and (min-width: 769px) {
 
     /* Index */
     .segundaLineaBoton {
@@ -578,92 +414,6 @@ a {
         line-height: 50px;
         position: absolute;
         left: 60%;
-    }
-
-   /* Proyectos */
-    .proyecto1{
-        justify-content: start;
-        width: 32vw;
-        overflow: hidden;
-    }
-
-    .proyecto2{
-        justify-content: start;
-        width: 32vw;
-        overflow: hidden;
-    }
-
-    .proyecto3{
-        justify-content: start;
-        width: 32vw;
-        overflow: hidden;
-    }
-
-    .proyecto4{
-        justify-content: start;
-        width: 32vw;
-        overflow: hidden;
-    }
-
-    .proyecto5{
-        justify-content: start;
-        width: 32vw;
-        overflow: hidden;
-    }
-
-    .proyecto6{
-        justify-content: start;
-        width: 32vw;
-        overflow: hidden;
-    }
-
-    .proyecto7{
-        justify-content: start;
-        width: 32vw;
-        overflow: hidden;
-    }
-
-    .proyecto8{
-        justify-content: start;
-        width: 32vw;
-        overflow: hidden;
-    }
-
-    .proyecto9{
-        justify-content: start;
-        width: 32vw;
-        overflow: hidden;
-    }
-
-    .proyecto10{
-        justify-content: start;
-        width: 32vw;
-        overflow: hidden;
-    }
-
-    .proyecto11{
-        justify-content: start;
-        width: 32vw;
-        overflow: hidden;
-    }
-
-    .proyecto12{
-        justify-content: start;
-        width: 32vw;
-        overflow: hidden;
-    }
-
-    .proyectoBoton {
-        font-size: 13px;
-        font-weight: 100;
-        border: solid 1px #484747;
-        padding: 8px;
-        border-radius: 30px;
-    }
-
-    .proyectosMenu {
-        margin-bottom: 5px;
-        margin-top: 10px;
     }
 
     /* Nosotrxs */
@@ -702,8 +452,8 @@ a {
     }
 }
 
-/* Tamaño 1024px */
-@media (max-width: 1024px){
+/* Tamaño Grande */
+@media (max-width:1200px) and (min-width: 993px) {
     /* Index */
     .grilla {
         grid-template-rows: 90px 0.4fr 0.4fr 0.6fr 0.3fr 0.3fr 0.3fr 0.4fr 0.6fr 0.5fr 0.15fr;
@@ -719,99 +469,12 @@ a {
         left: 70%;
     }
 
-    /* Nosotros */
-
-    .proyecto1{
-        justify-content: center;
-        width: 32vw;
-        overflow: hidden;
-    }
-
-    .proyecto2{
-        justify-content: center;
-        width: 32vw;
-        overflow: hidden;
-    }
-
-    .proyecto3{
-        justify-content: center;
-        width: 32vw;
-        overflow: hidden;
-    }
-
-    .proyecto4{
-        justify-content: start;
-        width: 32vw;
-        overflow: hidden;
-    }
-
-    .proyecto5{
-        justify-content: start;
-        width: 32vw;
-        overflow: hidden;
-    }
-
-    .proyecto6{
-        justify-content: start;
-        width: 32vw;
-        overflow: hidden;
-    }
-
-    .proyecto7{
-        justify-content: start;
-        width: 32vw;
-        overflow: hidden;
-    }
-
-    .proyecto8{
-        justify-content: start;
-        width: 32vw;
-        overflow: hidden;
-    }
-
-    .proyecto9{
-        justify-content: start;
-        width: 32vw;
-        overflow: hidden;
-    }
-
-    .proyecto10{
-        justify-content: start;
-        width: 32vw;
-        overflow: hidden;
-    }
-
-    .proyecto11{
-        justify-content: start;
-        width: 32vw;
-        overflow: hidden;
-    }
-
-    .proyecto12{
-        justify-content: start;
-        width: 32vw;
-        overflow: hidden;
-    }
-
-    .proyectoBoton {
-        font-size: 13px;
-        font-weight: 100;
-        border: solid 1px #484747;
-        padding: 8px;
-        border-radius: 30px;
-    }
-
-    .proyectosMenu {
-        margin-bottom: 5px;
-        margin-top: 10px;
-    }
-
 }
 
 /* Tamaño chico */
-@media (max-width: 420px){
+@media (max-width:768px) and (min-width: 300px) {
     .grilla {
-        grid-template-rows: 110px 0.19fr 0.19fr 0.2fr 0.3fr 0.3fr 0.3fr 0.4fr 0.3fr 0.5fr 0.15fr;
+        grid-template-rows: 110px 0.5fr 0.19fr 0.2fr 0.3fr 0.3fr 0.3fr 0.4fr 0.3fr 0.5fr 0.15fr;
     } 
 
     .header {
@@ -820,7 +483,7 @@ a {
         flex-direction: column;
         align-items: center;
         padding-top: 2%;
-        padding-bottom: 3%;
+        margin-bottom: 3%;
     }
 
     .diseñoProposito {
@@ -857,34 +520,13 @@ a {
     }
 
     /* PAGINA PROYECTOS */
+    
 
-    .proyectosTitulo {
-        font-size: 36px;
-        text-align: center;
-        margin-bottom: 20px;
-    }
 
-    .proyectosMenu {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        flex-wrap: wrap;
-        align-items: center;
-    }
 
-    .proyectoBoton {
-        font-size: 14px;
-        font-weight: 100;
-        border: solid 1px #484747;
-        padding: 5px;
-        border-radius: 30px;
-        margin: 3px;
-    }
-
+    /* Nosotros */
     .grillaNosotrxs {
-        grid-template-rows: 90px 0.28fr 0.28fr 1fr 1fr 1fr 1fr 0.15fr;
+        grid-template-rows: 110px 0.7fr 0.28fr 1fr 1fr 1fr 1fr 0.15fr;
     }
     
     .card1 {
@@ -910,6 +552,11 @@ a {
     .nosotrosCardTitulo {
         font-size: 25px;
         text-align: center;
+    }
+
+    /* Hablemos */
+    .grillaHablemos {
+        grid-template-rows: 110px 0.6fr 0.4fr 1fr 0.15fr;
     }
 
 }
